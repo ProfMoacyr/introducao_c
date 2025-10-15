@@ -1,3 +1,4 @@
+// C:/Users/moacy/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-g++.exe
 #include "driver/gpio.h"
 #include <string.h> // Para memset
 #include "freertos/FreeRTOS.h"
