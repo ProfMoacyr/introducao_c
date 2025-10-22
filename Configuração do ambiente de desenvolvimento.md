@@ -11,7 +11,7 @@ Na raiz do projeto:
 ```bash
 md \espressif
 cd downloads
-tar -xzvf qemu-xtensa-softmmu-esp_develop_9.2.2_20250817-x86_64-w64-mingw32.tar.xz qemu.tar.gz -C c:\espressif
+tar -xzvf qemu-xtensa-softmmu-esp_develop_9.2.2_20250817-x86_64-w64-mingw32.tar.xz -C c:\espressif
 copy libiconv-2.dll c:\espressif\qemu\bin\
 ```
 
