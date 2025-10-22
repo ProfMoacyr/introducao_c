@@ -2,6 +2,7 @@
 #include "driver/gpio.h"
 #include <string.h> // Para memset
 #include "freertos/FreeRTOS.h"
+#include "esp_log.h"
 
 void configurar_gpio_seguro(gpio_num_t pino)
 {
@@ -20,15 +21,18 @@ void configurar_gpio_seguro(gpio_num_t pino)
 
 void app_main()
 {
+	static const char *TAG = "MAIN";
 	// Configura GPIO 2 de forma segura
-	configurar_gpio_seguro(GPIO_NUM_2);
+	// configurar_gpio_seguro(GPIO_NUM_2);
 
 	// Loop de blink simples
 	while (1)
 	{
-		gpio_set_level(GPIO_NUM_2, 1);
+		// gpio_set_level(GPIO_NUM_2, 1);
+		ESP_LOGI(TAG, "led ACESO");
 		vTaskDelay(1000 / portTICK_PERIOD_MS);
-		gpio_set_level(GPIO_NUM_2, 0);
+		// gpio_set_level(GPIO_NUM_2, 0);
+		ESP_LOGI(TAG, "led APAGADO");
 		vTaskDelay(1000 / portTICK_PERIOD_MS);
 	}
 }

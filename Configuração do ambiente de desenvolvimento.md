@@ -6,9 +6,18 @@
 
 ## Emulador
 
-1. Baixe os arquivos [qemu-riscv32](https://github.com/espressif/qemu/releases/download/esp-develop-9.2.2-20250817/qemu-riscv32-softmmu-esp_develop_9.2.2_20250817-x86_64-w64-mingw32.tar.xz) e [qemu-xtensa](https://github.com/espressif/qemu/releases/download/esp-develop-9.2.2-20250817/qemu-xtensa-softmmu-esp_develop_9.2.2_20250817-x86_64-w64-mingw32.tar.xz) e descompacte-os na pasta c:\espressif
-2. Inclua a pasta `c:\espressif\qemu\bin` no path
-3. Copie o arquivo `c:\libiconv-2.dll` para a pasta `c:\espressif\qemu\bin`
+Na raiz do projeto:
+
+```bash
+md \espressif
+cd downloads
+tar -xzvf qemu-xtensa-softmmu-esp_develop_9.2.2_20250817-x86_64-w64-mingw32.tar.xz qemu.tar.gz -C c:\espressif
+copy libiconv-2.dll c:\espressif\qemu\bin\
+```
+
+<!-- 1. Baixe os arquivos [qemu-riscv32](https://github.com/espressif/qemu/releases/download/esp-develop-9.2.2-20250817/qemu-riscv32-softmmu-esp_develop_9.2.2_20250817-x86_64-w64-mingw32.tar.xz) e [qemu-xtensa](https://github.com/espressif/qemu/releases/download/esp-develop-9.2.2-20250817/qemu-xtensa-softmmu-esp_develop_9.2.2_20250817-x86_64-w64-mingw32.tar.xz) e descompacte-os na pasta c:\espressif -->
+- Inclua a pasta `c:\espressif\qemu\bin` no path
+- Copie o arquivo `c:\libiconv-2.dll` para a pasta `c:\espressif\qemu\bin`
 
 ## Comandos úteis
 
